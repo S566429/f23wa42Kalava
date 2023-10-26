@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  router.get('/computation', (req, res) => {
+  //router.get('/', (req, res) => {
     // Check if there is a query parameter 'x' in the request
     const x = req.query.x ? parseFloat(req.query.x) : Math.random() * 10;
   
@@ -16,6 +16,6 @@ router.get('/', function(req, res, next) {
     res.send(responseString);
   });
   
-});
+//});
 
 module.exports = router;
